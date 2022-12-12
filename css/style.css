@@ -137,6 +137,9 @@ body {
 .about-list-window {
     background: #EBEBEB;
     padding: 30px 0 40px 40px;
+    width: 255px;
+    height: 255px;
+    box-sizing: border-box;
 }
 
 .about-list-title {
@@ -162,6 +165,11 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #005FA3;
+}
+
+.customer {
+    background: #EBEBEB;
+    padding: 85px 0 92px;
 }
 
 .customer-title {
@@ -237,6 +245,7 @@ body {
 
 .benefit {
     background: #EBEBEB;
+    padding: 102px 0 112px 0;
 }
 
 .benefit-title {
@@ -244,7 +253,7 @@ body {
 }
 
 .benefit-subtitle {
-    margin: 40px 0 0;
+    margin: 40px 0 107px;
 }
 
 .benefit-list-title {
@@ -259,6 +268,12 @@ body {
     width: 1920px;
     height: 623px;
     background-size: cover;
+    padding: 122px 405px 140px 407px;
+}
+
+.footer-connection {
+    margin-top: 122px;
+    margin-left: 2px;
 }
 
 .footer-title {
@@ -267,15 +282,51 @@ body {
     font-size: 48px;
     line-height: 69px;
     color: #FFFFFF;
+    width: 445px;
+    height: 47px;
 }
 
 .footer-text {
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
+    width: 445px;
+    min-height: 43px;
+    margin: 60px 0 81px;
+}
+
+.footer-telephone {
+    width: 35px;
+    height: 34px;
+}
+
+.footer-envelope {
+    width: 39px;
+    height: 30px;
+}
+
+.footer-list-text {
+    width: 184px;
+    height: 29px;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 80px 0 0 12px;
+}
+
+.footer-button {
+    width: 270px;
+    height: 60px;
 }
 
 .footer-last-row {
     font-size: 14px;
     line-height: 19px;
+    min-height: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    background: #E5E5E5;
+    padding: 50px 0 ;
 }
