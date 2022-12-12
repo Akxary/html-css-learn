@@ -1,0 +1,109 @@
+body {
+    color: #000000;
+    font-family: 'lato';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.header-title {
+    color: #005FA3;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.header-contact-text {
+    color: #000000;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.header-contact-link {
+    text-decoration: none;
+}
+
+.header-nav-link {
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.desc {
+    background-color: #191E22;
+    background-image: url(../img/first-screen-bg.jpg);
+}
+
+.desc-title {
+    color: #FFF;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+}
+
+.desc-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 138%;
+}
+
+.service {
+    background: #EBEBEB;
+}
+
+.section-title {
+    color: #BDBDBD;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.section-subtitle {
+    color: #333;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+}
+
+.service-item-title {
+    color: #FFF;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.service-item-link {
+    background: #EBEBEB;
+    background-image: url(../img/scy-scrapper.jpg);
+    text-decoration: none;
+}
+
+.review-item-text {
+    color: #000;
+}
+
+.review-button {
+    color: #FFF;
+}
+
+.review-item-author {
+    color: #000;
+    font-weight: 900;
+}
+
+.review-item-position {
+    color: #EBEBEB;
+    font-weight: 400;
+}

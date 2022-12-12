@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
     <title>Бухгалтерские услуги</title>
 </head>
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo">
-        <p>BuhOne</p>
+    <header class="header">
+        <img class="header-img" src="./img/logo.svg" alt="logo">
+        <p class="header-title">BuhOne</p>
         <ul>
             <li>
-                <a href="tel:81112223344">
+                <a class="header-contact-link" href="tel:81112223344">
                     <img src="./img/mobile-phone.svg" alt="mobile-phone">
-                    <span>8 (111) 222-33-44</span>
+                    <span class="header-contact-text">8 (111) 222-33-44</span>
                 </a>
             </li>
             <li>
                 <img src="./img/watch.svg" alt="scedule">
-                <span>Пн-Пт 10:00-18:00</span>
+                <span class="header-contact-text">Пн-Пт 10:00-18:00</span>
             </li>
             <li>
-                <a href="mailto:order@buhone.ru">
+                <a class="header-contact-link" href="mailto:order@buhone.ru">
                     <img src="./img/envelope-blue.svg" alt="envelope-blue">
-                    <span>order@buhone.ru</span>
+                    <span class="header-contact-text">order@buhone.ru</span>
             </li>
             <li>
                 <img src="./img/geo-map.svg" alt="geo-map">
@@ -34,73 +39,72 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">главная</a>
+                    <a class="header-nav-link" href="#">главная</a>
                 </li>
                 <li>
-                    <a href="#">услуги</a>
+                    <a class="header-nav-link" href="#">услуги</a>
                 </li>
                 <li>
-                    <a href="#">кейсы</a>
+                    <a class="header-nav-link" href="#">кейсы</a>
                 </li>
                 <li>
-                    <a href="#">о компании</a>
+                    <a class="header-nav-link" href="#">о компании</a>
                 </li>
                 <li>
-                    <a href="#">контакты</a>
+                    <a class="header-nav-link" href="#">контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Бухгалтерские услуги в Санкт-Петербурге</h1>
-            <a href="#">Наша презентанция</a>
+        <section class="desc">
+            <h1 class="desc-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
+            <a class="desc-link" href="#">Наша презентанция</a>
         </section>
-        <section>
-            <h2>Наши услуги</h2>
-            <p>Мы специализируемся</p>
+        <section class="service">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Мы специализируемся</p>
             <ul>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
-                <li><a href="#"><h3>Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
             </ul>
         </section>
-        <section>
-            <h2>О нас</h2>
-            <p>Компания</p>
-            <p>ИвановПром</p>
+        <section class="about">
+            <h2 class="section-title">О нас</h2>
+            <p class="section-subtitle">Компания ИвановПром</p>
             <blockquote>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam neque repellat placeat ab quidem fugit nihil ipsam harum dolores, perferendis pariatur animi necessitatibus repudiandae eos. Nostrum sapiente aperiam saepe doloribus?
             </blockquote>
             <ul>
                 <li>
-                    <h3>90</h3>
-                    <p>Завершено крупных сделок</p>
+                    <p>90</p>
+                    <h3>Завершено крупных сделок</h3>
                     <a href="#">Все кейсы</a>
                 </li>
                 <li>
-                    <h3>90</h3>
-                    <p>Завершено крупных сделок</p>
+                    <p>90</p>
+                    <h3>Завершено крупных сделок</h3>
                     <a href="#">Все кейсы</a>
                 </li>
                 <li>
-                    <h3>90</h3>
-                    <p>Завершено крупных сделок</p>
+                    <p>90</p>
+                    <h3>Завершено крупных сделок</h3>
                     <a href="#">Все кейсы</a>
                 </li>
                 <li>
-                    <h3>90</h3>
-                    <p>Завершено крупных сделок</p>
+                    <p>90</p>
+                    <h3>Завершено крупных сделок</h3>
                     <a href="#">Все кейсы</a>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Наши клиенты</h2>
-            <p>С нами работают</p>
+        <section class="customer">
+            <h2 class="section-title">Наши клиенты</h2>
+            <p class="section-subtitle">С нами работают</p>
             <ul>
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
@@ -112,34 +116,34 @@
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
             </ul>
         </section>
-        <section>
-            <h2>Отзывы</h2>
-            <p>Ваши благодарности</p>
-            <button type="button">Оставить отзыв</button>
+        <section class="review">
+            <h2 class="section-title">Отзывы</h2>
+            <p class="section-subtitle">Ваши благодарности</p>
+            <button class="review-button" type="button">Оставить отзыв</button>
             <ul>
                 <li>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
+                    <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
                     <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО "Раз-Два"</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
                 <li>
-                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</blockquote>
+                    <blockquote class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</blockquote>
                     <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО "Раз-Два"</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
                 <li>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
+                    <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
                     <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО "Раз-Два"</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
                 <li>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
+                    <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
                     <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p>Екатерина Иванова</p>
-                    <p>Директор ООО "Раз-Два"</p>
+                    <p class="review-item-author">Екатерина Иванова</p>
+                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
             </ul>
             <ul>
@@ -151,9 +155,9 @@
             <button type="button" disabled><img src="./img/slider__button-prev.svg" alt="prev"></button>
             <button type="button"><img src="./img/slider__button-next.svg" alt="next"></button>
         </section>
-        <section>
-            <h2>Наши преимущества</h2>
-            <p>Мы предлагаем</p>
+        <section class="benefit">
+            <h2 class="section-title">Наши преимущества</h2>
+            <p class="section-subtitle">Мы предлагаем</p>
             <ul>
                 <li>
                     <img src="./img/quality-logo.svg" alt="quality-logo">
