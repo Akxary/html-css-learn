@@ -7,6 +7,15 @@ body {
     line-height: 25px;
 }
 
+.container {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+.display-none {
+    display: none;
+}
+
 .header-title {
     color: #005FA3;
     font-family: 'Merriweather';
@@ -37,6 +46,7 @@ body {
 }
 
 .desc {
+    padding: 170px 0;
     background-color: #191E22;
     background-image: url(../img/first-screen-bg.jpg);
 }
@@ -47,6 +57,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 66px;
+    margin: 0 0 131px;
 }
 
 .desc-link {
@@ -56,10 +67,15 @@ body {
     font-size: 25px;
     line-height: 138%;
     background: #005FA3;
+    width: 333px;
+    min-height: 84px;
+    display: block;
+    padding: 27px 22px;
 }
 
 .service {
     background: #EBEBEB;
+    padding: 140px 0;
 }
 
 .section-title {
@@ -68,6 +84,7 @@ body {
     font-weight: 900;
     font-size: 24px;
     line-height: 33px;
+    margin: 140px 0 0 0;
 }
 
 .section-subtitle {
@@ -76,6 +93,10 @@ body {
     font-weight: 900;
     font-size: 48px;
     line-height: 69px;
+}
+
+.service-subtitle {
+    margin: 0 0 102px;
 }
 
 .service-item-title {
@@ -89,10 +110,24 @@ body {
     background: #EBEBEB;
     background-image: url(../img/scy-scrapper.jpg);
     text-decoration: none;
+    width: 350px;
+    min-height: 360px;
+    display: block;
+    padding: 45px;
+    background-size: cover;
+}
+
+.about-subtitle {
+    width: 347px;
+    height: 117px;
+    margin: 40px 0 0 2px;
 }
 
 .about-text {
     color: #000000;
+    width: 445px;
+    height: 245px;
+    margin: 60px 0 0 0;
 }
 
 .about-company-name{
@@ -101,6 +136,7 @@ body {
 
 .about-list-window {
     background: #EBEBEB;
+    padding: 30px 0 40px 40px;
 }
 
 .about-list-title {
@@ -116,6 +152,9 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    width: 107px;
+    min-height: 37px;
+    margin: 30px 0 47px;
 }
 
 .about-list-link {
@@ -125,12 +164,26 @@ body {
     color: #005FA3;
 }
 
+.customer-title {
+    margin: 85px 0 0;
+}
+
+.customer-subtitle {
+    margin: 48px 0 0 2px;
+}
+
+.review {
+    padding: 174px 0 120px;
+}
+
 .review-item {
     background: #EBEBEB;
+    padding: 45px 95px;
 }
 
 .review-item-text {
     color: #000;
+    margin: 0 0 58px;
 }
 
 .button {
@@ -140,6 +193,11 @@ body {
     font-size: inherit;
     line-height: inherit;
     border: none;
+}
+
+.review-button {
+    min-height: 60px;
+    width: 270px;
 }
 
 .review-item-author {
@@ -154,8 +212,39 @@ body {
     color: #4F4F4F;
 }
 
+.review-slider-button {
+    width: 10px;
+    height: 10px;
+    background-color: #005FA3;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.review-slider-arrow {
+    width: 60px;
+    height: 60px;
+    background-color: #005FA3;
+    padding: 0;
+    border: 0;
+    opacity: 0.2;
+}
+
+.review-slider-button-active {
+    opacity: 1;
+}
+
 .benefit {
     background: #EBEBEB;
+}
+
+.benefit-title {
+    margin: 102px 0 0 -2px;
+}
+
+.benefit-subtitle {
+    margin: 40px 0 0;
 }
 
 .benefit-list-title {
@@ -167,6 +256,9 @@ body {
 .footer {
     background-color: #191E22;
     background-image: url(../img/first-screen-bg.jpg);
+    width: 1920px;
+    height: 623px;
+    background-size: cover;
 }
 
 .footer-title {

@@ -12,7 +12,7 @@
     <title>Бухгалтерские услуги</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <img class="header-img" src="./img/logo.svg" alt="logo">
         <p class="header-title">BuhOne</p>
         <ul>
@@ -58,24 +58,28 @@
     </header>
     <main>
         <section class="desc">
-            <h1 class="desc-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
-            <a class="desc-link" href="#">Наша презентанция</a>
+            <div class="container">
+                <h1 class="desc-title">Бухгалтерские услуги в Санкт-Петербурге</h1>
+                <a class="desc-link" href="#">Наша презентанция</a>
+            </div>
         </section>
         <section class="service">
-            <h2 class="section-title">Наши услуги</h2>
-            <p class="section-subtitle">Мы специализируемся</p>
-            <ul>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-            </ul>
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle service-subtitle">Мы специализируемся</p>
+                <ul>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                </ul>
+            </div>
         </section>
-        <section class="about">
+        <section class="about container">
             <h2 class="section-title">О нас</h2>
-            <p class="section-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
+            <p class="section-subtitle about-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
             <blockquote class="about-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam neque repellat placeat ab quidem fugit nihil ipsam harum dolores, perferendis pariatur animi necessitatibus repudiandae eos. Nostrum sapiente aperiam saepe doloribus?
             </blockquote>
@@ -102,9 +106,9 @@
                 </li>
             </ul>
         </section>
-        <section class="customer">
-            <h2 class="section-title">Наши клиенты</h2>
-            <p class="section-subtitle">С нами работают</p>
+        <section class="customer container">
+            <h2 class="section-title customer-title">Наши клиенты</h2>
+            <p class="section-subtitle customer-subtitle">С нами работают</p>
             <ul>
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
@@ -116,10 +120,10 @@
                 <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
             </ul>
         </section>
-        <section class="review">
+        <section class="review container">
             <h2 class="section-title">Отзывы</h2>
             <p class="section-subtitle">Ваши благодарности</p>
-            <button class="button" type="button">Оставить отзыв</button>
+            <button class="button review-button" type="button">Оставить отзыв</button>
             <ul>
                 <li class="review-item">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
@@ -127,19 +131,19 @@
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
-                <li class="review-item">
+                <li class="review-item display-none">
                     <blockquote class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</blockquote>
                     <img src="./img/woman-pic.png" alt="woman-pic">
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
-                <li class="review-item">
+                <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
                     <img src="./img/woman-pic.png" alt="woman-pic">
                     <p class="review-item-author">Екатерина Иванова</p>
                     <p class="review-item-position">Директор ООО "Раз-Два"</p>
                 </li>
-                <li class="review-item">
+                <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
                     <img src="./img/woman-pic.png" alt="woman-pic">
                     <p class="review-item-author">Екатерина Иванова</p>
@@ -147,58 +151,62 @@
                 </li>
             </ul>
             <ul>
-                <li><button type="button">1</button></li>
-                <li><button type="button">2</button></li>
-                <li><button type="button">3</button></li>
-                <li><button type="button">4</button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
+                <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
+                <li><button type="button" class="review-slider-button"></button></li>
             </ul>
-            <button type="button" disabled><img src="./img/slider__button-prev.svg" alt="prev"></button>
-            <button type="button"><img src="./img/slider__button-next.svg" alt="next"></button>
+            <button type="button" disabled class="review-slider-arrow"><img src="./img/slider__button-prev.svg" alt="prev"></button>
+            <button type="button" class="review-slider-arrow review-slider-button-active"><img src="./img/slider__button-next.svg" alt="next"></button>
         </section>
         <section class="benefit">
-            <h2 class="section-title">Наши преимущества</h2>
-            <p class="section-subtitle">Мы предлагаем</p>
-            <ul>
-                <li>
-                    <img src="./img/quality-logo.svg" alt="quality-logo">
-                    <p class="benefit-list-title">Качество</p>
-                </li>
-                <li>
-                    <img src="./img/speed-logo.svg" alt="speed-logo">
-                    <p class="benefit-list-title">Оперативность</p>
-                </li>
-                <li>
-                    <img src="./img/tyre-expert-logo.svg" alt="tyre-expert-logo">
-                    <p class="benefit-list-title">Экспертность</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="section-title benefit-title">Наши преимущества</h2>
+                <p class="section-subtitle benefit-subtitle">Мы предлагаем</p>
+                <ul>
+                    <li>
+                        <img src="./img/quality-logo.svg" alt="quality-logo">
+                        <p class="benefit-list-title">Качество</p>
+                    </li>
+                    <li>
+                        <img src="./img/speed-logo.svg" alt="speed-logo">
+                        <p class="benefit-list-title">Оперативность</p>
+                    </li>
+                    <li>
+                        <img src="./img/tyre-expert-logo.svg" alt="tyre-expert-logo">
+                        <p class="benefit-list-title">Экспертность</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <div>
-                <h2 class="footer-title">Связь с нами</h2>
-                <p class="footer-text">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
-                <ul>
-                    <li>
-                        <a href="tel:+71112223344">
-                            <img src="./img/telephone.svg" alt="telephone">
-                            <span class="footer-list-text">+7 (111) 222-33-44</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:order@buhone.ru">
-                            <img src="./img/envelope.svg" alt="envelope">
-                            <span class="footer-list-text">order@buhone.ru</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                form
-                <button class="button">Отправить сообщение</button>
+            <div class="container">
+                <div>
+                    <h2 class="footer-title">Связь с нами</h2>
+                    <p class="footer-text">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+                    <ul>
+                        <li>
+                            <a href="tel:+71112223344">
+                                <img src="./img/telephone.svg" alt="telephone">
+                                <span class="footer-list-text">+7 (111) 222-33-44</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:order@buhone.ru">
+                                <img src="./img/envelope.svg" alt="envelope">
+                                <span class="footer-list-text">order@buhone.ru</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    form
+                    <button class="button">Отправить сообщение</button>
+                </div>
             </div>
         </div>
-        <div class="footer-last-row">
+        <div class="footer-last-row container">
             <p>2019 (с) Все права защищены. БухОне.ру</p>
             <p>Разработано: BuhOne</p>
         </div>
