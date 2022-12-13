@@ -83,8 +83,8 @@
         </section>
         <section class="about container">
             <div class="flex">
-                <h2 class="section-title">О нас</h2>
-                <p class="section-subtitle about-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
+                <h2 class="about-title">О нас</h2>
+                <p class="about-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
                 <blockquote class="about-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam neque repellat placeat ab quidem fugit nihil ipsam harum dolores, perferendis pariatur animi necessitatibus repudiandae eos. Nostrum sapiente aperiam saepe doloribus?
                 </blockquote>
@@ -114,9 +114,9 @@
         </section>
         <section class="customer">
             <div class="container">
-                <h2 class="section-title customer-title">Наши клиенты</h2>
-                <p class="section-subtitle customer-subtitle">С нами работают</p>
-                <ul>
+                <h2 class="customer-title">Наши клиенты</h2>
+                <p class="customer-subtitle">С нами работают</p>
+                <ul class="customer-list">
                     <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
                     <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
                     <li><img src="./img/microsoft-logo.png" alt="company_logo"></li>
@@ -130,42 +130,64 @@
         </section>
         <section class="review container">
             <h2 class="section-title">Отзывы</h2>
-            <p class="section-subtitle">Ваши благодарности</p>
-            <button class="button review-button" type="button">Оставить отзыв</button>
+            <div class="review-head-flex">
+                <p class="section-subtitle">Ваши благодарности</p>
+                <button class="button review-button" type="button">Оставить отзыв</button>
+            </div>
             <ul>
                 <li class="review-item">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
-                    <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p class="review-item-author">Екатерина Иванова</p>
-                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                    <div class="review-list-pic-flex">
+                        <img src="./img/woman-pic.png" alt="woman-pic" class="review-pic">
+                        <div>
+                            <p class="review-item-author">Екатерина Иванова</p>
+                            <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="review-item display-none">
                     <blockquote class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</blockquote>
-                    <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p class="review-item-author">Екатерина Иванова</p>
-                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                    <div class="review-list-pic-flex">
+                        <img src="./img/woman-pic.png" alt="woman-pic" class="review-pic">
+                        <div>
+                            <p class="review-item-author">Екатерина Иванова</p>
+                            <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
-                    <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p class="review-item-author">Екатерина Иванова</p>
-                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                    <div class="review-list-pic-flex">
+                        <img src="./img/woman-pic.png" alt="woman-pic" class="review-pic">
+                        <div>
+                            <p class="review-item-author">Екатерина Иванова</p>
+                            <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                        </div>
+                    </div>
                 </li>
                 <li class="review-item display-none">
                     <p class="review-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores necessitatibus veniam itaque? Ullam dicta, totam nemo cum, quis nihil illo accusamus quisquam, iusto labore aspernatur molestiae voluptate ipsum esse eligendi.</p>
-                    <img src="./img/woman-pic.png" alt="woman-pic">
-                    <p class="review-item-author">Екатерина Иванова</p>
-                    <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                    <div class="review-list-pic-flex">
+                        <img src="./img/woman-pic.png" alt="woman-pic" class="review-pic">
+                        <div>
+                            <p class="review-item-author">Екатерина Иванова</p>
+                            <p class="review-item-position">Директор ООО "Раз-Два"</p>
+                        </div>
+                    </div>
                 </li>
             </ul>
-            <ul>
-                <li><button type="button" class="review-slider-button"></button></li>
-                <li><button type="button" class="review-slider-button"></button></li>
-                <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
-                <li><button type="button" class="review-slider-button"></button></li>
-            </ul>
-            <button type="button" disabled class="review-slider-arrow"><img src="./img/slider__button-prev.svg" alt="prev"></button>
-            <button type="button" class="review-slider-arrow review-slider-button-active"><img src="./img/slider__button-next.svg" alt="next"></button>
+            <div class="review-button-flex">
+                <ul class="review-button-list-flex">
+                    <li><button type="button" class="review-slider-button"></button></li>
+                    <li><button type="button" class="review-slider-button"></button></li>
+                    <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
+                    <li><button type="button" class="review-slider-button"></button></li>
+                </ul>
+                <div>
+                    <button type="button" disabled class="review-slider-arrow"><img src="./img/slider__button-prev.svg" alt="prev"></button>
+                    <button type="button" class="review-slider-arrow review-slider-button-active"><img src="./img/slider__button-next.svg" alt="next"></button>
+                </div>
+            </div>
         </section>
         <section class="benefit">
             <div class="container">
@@ -195,11 +217,11 @@
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-connection">
+        <div class="footer footer-flex">
+            <div class="footer-connection flex">
                 <h2 class="footer-title">Связь с нами</h2>
                 <p class="footer-text">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
-                <ul>
+                <ul class="footer-flex-list">
                     <li>
                         <a href="tel:+71112223344" class="header-contact-link">
                             <img src="./img/telephone.svg" alt="telephone" class="footer-telephone">
@@ -213,7 +235,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
+            <div class="footer-form flex">
                 <p>form</p>
                 <button class="button footer-button">Отправить сообщение</button>
             </div>

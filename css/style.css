@@ -138,7 +138,7 @@ nav {
     font-weight: 900;
     font-size: 24px;
     line-height: 33px;
-    margin: 140px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .section-subtitle {
@@ -158,13 +158,20 @@ nav {
     height: 750px;
     display: flex;
     flex-wrap: wrap;
-    
-    padding: 0 30px 30px 0;
 }
 
 .service-item {
     width: 350px;
-    height: 360px;
+    height: 360px;    
+}
+
+.service-item:nth-of-type(n+2) {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.service-item:nth-of-type(4) {
+    margin-left: 0;
 }
 
 .service-item-title {
@@ -172,6 +179,9 @@ nav {
     font-weight: 900;
     font-size: 24px;
     line-height: 30px;
+    width: 187px;
+    height: 99px;
+    margin-left: 45px;
 }
 
 .service-item-link {
@@ -180,9 +190,14 @@ nav {
     text-decoration: none;
     width: 350px;
     height: 360px;
-    display: block;
-    
-    
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65)), url(../img/scy-scrapper.jpg);
+}
+
+.service-item-link:nth-of-type(n+1) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/scy-scrapper.jpg);
 }
 
 .about {
@@ -190,10 +205,27 @@ nav {
     align-items: center;
 }
 
+.about-title {
+    width: 155px;
+    height: 23px;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    margin-top: 140px;
+}
+
 .about-subtitle {
     width: 347px;
     height: 117px;
     margin: 40px 0 0 2px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
 }
 
 .about-text {
@@ -258,15 +290,43 @@ nav {
 }
 
 .customer-title {
-    margin: 85px 0 0;
-}
+    width: 350px;
+    height: 19.64px;
+    margin: 0 0 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+    }
 
 .customer-subtitle {
-    margin: 48px 0 0 2px;
+    margin: 48px 0 43px 2px;
+    width: 483px;
+    height: 52px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+}
+
+.customer-list {
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .review {
     padding: 174px 0 120px;
+}
+
+.review-head-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 80px;
 }
 
 .review-item {
@@ -305,6 +365,19 @@ nav {
     color: #4F4F4F;
 }
 
+.review-pic {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 35px;
+}
+
+.review-list-pic-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .review-slider-button {
     width: 10px;
     height: 10px;
@@ -326,6 +399,18 @@ nav {
 
 .review-slider-button-active {
     opacity: 1;
+}
+
+.review-button-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.review-button-list-flex {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
 }
 
 .benefit {
@@ -375,6 +460,11 @@ nav {
     box-sizing: border-box;
 }
 
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-connection {
     margin-left: 2px;
 }
@@ -390,6 +480,9 @@ nav {
 }
 
 .footer-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
@@ -415,6 +508,12 @@ nav {
     line-height: 29px;
     color: #FFFFFF;
     margin: 80px 0 0 12px;
+}
+
+.footer-flex-list {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-button {
