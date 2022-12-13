@@ -12,49 +12,53 @@
     <title>Бухгалтерские услуги</title>
 </head>
 <body>
-    <header class="header container">
-        <img class="header-img" src="./img/logo.svg" alt="logo">
-        <p class="header-title">BuhOne</p>
-        <ul>
-            <li>
-                <a class="header-contact-link" href="tel:81112223344">
-                    <img src="./img/mobile-phone.svg" alt="mobile-phone">
-                    <span class="header-contact-text">8 (111) 222-33-44</span>
-                </a>
-            </li>
-            <li>
-                <img src="./img/watch.svg" alt="scedule">
-                <span class="header-contact-text">Пн-Пт 10:00-18:00</span>
-            </li>
-            <li>
-                <a class="header-contact-link" href="mailto:order@buhone.ru">
-                    <img src="./img/envelope-blue.svg" alt="envelope-blue">
-                    <span class="header-contact-text">order@buhone.ru</span>
-            </li>
-            <li>
-                <img src="./img/geo-map.svg" alt="geo-map">
-                <span  class="header-contact-text">Невский пр. 130</span>
-            </li>
-        </ul>
-        <nav>
-            <ul>
+    <header class="header container head-flex">
+        <div class="head-flex-logo">
+            <img class="header-img" src="./img/logo.svg" alt="logo">
+            <p class="header-title">BuhOne</p>
+        </div>
+        <div class="flex">
+            <ul class="head-flex-list">
                 <li>
-                    <a class="header-nav-link" href="#">главная</a>
+                    <a class="header-contact-link" href="tel:81112223344">
+                        <img src="./img/mobile-phone.svg" alt="mobile-phone">
+                        <span class="header-contact-text">8 (111) 222-33-44</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="header-nav-link" href="#">услуги</a>
+                    <img src="./img/watch.svg" alt="scedule">
+                    <span class="header-contact-text">Пн-Пт 10:00-18:00</span>
                 </li>
                 <li>
-                    <a class="header-nav-link" href="#">кейсы</a>
+                    <a class="header-contact-link" href="mailto:order@buhone.ru">
+                        <img src="./img/envelope-blue.svg" alt="envelope-blue">
+                        <span class="header-contact-text">order@buhone.ru</span>
                 </li>
                 <li>
-                    <a class="header-nav-link" href="#">о компании</a>
-                </li>
-                <li>
-                    <a class="header-nav-link" href="#">контакты</a>
+                    <img src="./img/geo-map.svg" alt="geo-map">
+                    <span  class="header-contact-text">Невский пр. 130</span>
                 </li>
             </ul>
-        </nav>
+            <nav>
+                <ul class="head-flex-list">
+                    <li>
+                        <a class="header-nav-link" href="#">главная</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">услуги</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">кейсы</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">о компании</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="desc">
@@ -67,23 +71,25 @@
             <div class="container">
                 <h2 class="section-title">Наши услуги</h2>
                 <p class="section-subtitle service-subtitle">Мы специализируемся</p>
-                <ul>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
-                    <li><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                <ul class="service-list">
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
+                    <li class="service-item"><a class="service-item-link" href="#"><h3 class="service-item-title">Бухгалтерское обслуживание</h3></a></li>
                 </ul>
             </div>
         </section>
         <section class="about container">
-            <h2 class="section-title">О нас</h2>
-            <p class="section-subtitle about-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
-            <blockquote class="about-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam neque repellat placeat ab quidem fugit nihil ipsam harum dolores, perferendis pariatur animi necessitatibus repudiandae eos. Nostrum sapiente aperiam saepe doloribus?
-            </blockquote>
-            <ul>
+            <div class="flex">
+                <h2 class="section-title">О нас</h2>
+                <p class="section-subtitle about-subtitle">Компания <span class="about-company-name">ИвановПром</span></p>
+                <blockquote class="about-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam neque repellat placeat ab quidem fugit nihil ipsam harum dolores, perferendis pariatur animi necessitatibus repudiandae eos. Nostrum sapiente aperiam saepe doloribus?
+                </blockquote>
+            </div>
+            <ul class="about-list">
                 <li class="about-list-window">
                     <p class="about-list-title">90</p>
                     <h3 class="about-list-text">Завершено крупных сделок</h3>
@@ -165,17 +171,23 @@
             <div class="container">
                 <h2 class="section-title benefit-title">Наши преимущества</h2>
                 <p class="section-subtitle benefit-subtitle">Мы предлагаем</p>
-                <ul>
-                    <li>
-                        <img src="./img/quality-logo.svg" alt="quality-logo">
+                <ul class="head-flex">
+                    <li class="benefit-flex">
+                        <div class="benefit-flex-pic">
+                            <img src="./img/quality-logo.svg" alt="quality-logo" class="benefit-pic">
+                        </div>
                         <p class="benefit-list-title">Качество</p>
                     </li>
-                    <li>
-                        <img src="./img/speed-logo.svg" alt="speed-logo">
+                    <li class="benefit-flex">
+                        <div class="benefit-flex-pic">
+                            <img src="./img/speed-logo.svg" alt="speed-logo" class="benefit-pic">
+                        </div>
                         <p class="benefit-list-title">Оперативность</p>
                     </li>
-                    <li>
-                        <img src="./img/tyre-expert-logo.svg" alt="tyre-expert-logo">
+                    <li class="benefit-flex">
+                        <div class="benefit-flex-pic">
+                            <img src="./img/tyre-expert-logo.svg" alt="tyre-expert-logo" class="benefit-pic">
+                        </div>
                         <p class="benefit-list-title">Экспертность</p>
                     </li>
                 </ul>
@@ -207,7 +219,7 @@
             </div>
         </div>
         <div class="footer-last-row">
-            <div class="container">
+            <div class="container head-flex">
                 <p>2019 (с) Все права защищены. БухОне.ру</p>
                 <p>Разработано: BuhOne</p>
             </div>

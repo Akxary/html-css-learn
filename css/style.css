@@ -16,12 +16,58 @@ body {
     display: none;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img {
+    width: 40px;
+    height: 40px;
+}
+
 .header-title {
     color: #005FA3;
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 36px;
     line-height: 50px;
+    width: 190px;
+    height: 43px;
+}
+
+.head-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.head-flex-logo {
+    height: 110px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 30px 20px;
+}
+
+.head-flex-list {
+    height: 55px;
+    width: 671px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.head-size {
+    margin: 33px 185px 34px; 
 }
 
 .header-contact-text {
@@ -47,8 +93,11 @@ body {
 
 .desc {
     padding: 170px 0;
-    background-color: #191E22;
+    background-color: #EBEBEB;;
     background-image: url(../img/first-screen-bg.jpg);
+    width: 1920px;
+    height: 670px;
+    background-size: cover;
 }
 
 .desc-title {
@@ -58,6 +107,8 @@ body {
     font-size: 48px;
     line-height: 66px;
     margin: 0 0 131px;
+    width: 589px;
+    height: 117px;
 }
 
 .desc-link {
@@ -69,8 +120,11 @@ body {
     background: #005FA3;
     width: 333px;
     min-height: 84px;
-    display: block;
     padding: 27px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .service {
@@ -96,7 +150,21 @@ body {
 }
 
 .service-subtitle {
-    margin: 0 0 102px;
+    margin: 40px 0 102px;
+}
+
+.service-list {
+    width: 1110px;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 0 30px 30px 0;
+}
+
+.service-item {
+    width: 350px;
+    height: 360px;
 }
 
 .service-item-title {
@@ -111,10 +179,15 @@ body {
     background-image: url(../img/scy-scrapper.jpg);
     text-decoration: none;
     width: 350px;
-    min-height: 360px;
+    height: 360px;
     display: block;
-    padding: 45px;
-    background-size: cover;
+    
+    
+}
+
+.about {
+    display:flex;
+    align-items: center;
 }
 
 .about-subtitle {
@@ -127,19 +200,31 @@ body {
     color: #000000;
     width: 445px;
     height: 245px;
-    margin: 60px 0 0 0;
+    margin: 60px 125px 0 0;
 }
 
 .about-company-name{
     color: #005FA3;
 }
 
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 .about-list-window {
     background: #EBEBEB;
-    padding: 30px 0 40px 40px;
+    padding: 30px 40px 40px;
     width: 255px;
     height: 255px;
     box-sizing: border-box;
+    
+}
+
+.about-list-window:nth-of-type(n+3) {
+    margin-top: 30px;
 }
 
 .about-list-title {
@@ -260,6 +345,24 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 132%;
+    margin-top: 20px;
+}
+
+.benefit-pic {
+    width: 132px;
+    height: 126px;
+    display: block;
+}
+
+.benefit-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefit-flex-pic {
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
@@ -269,10 +372,10 @@ body {
     height: 623px;
     background-size: cover;
     padding: 122px 405px 140px 407px;
+    box-sizing: border-box;
 }
 
 .footer-connection {
-    margin-top: 122px;
     margin-left: 2px;
 }
 
