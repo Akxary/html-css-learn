@@ -106,9 +106,9 @@
                     <a class="about-list-link" href="#">Все кейсы</a>
                 </li>
                 <li class="about-list-window">
-                    <p class="about-list-title">90</p>
-                    <h3 class="about-list-text">Завершено крупных сделок</h3>
-                    <a class="about-list-link" href="#">Все кейсы</a>
+                    <p class="about-list-title-x">90</p>
+                    <h3 class="about-list-text-x">Завершено крупных сделок</h3>
+                    <a class="about-list-link-x" href="#">Все кейсы</a>
                 </li>
             </ul>
         </section>
@@ -235,9 +235,26 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form flex">
-                <p>form</p>
-                <button class="button footer-button">Отправить сообщение</button>
+            <div class="flex">
+                <form action="#">
+                    <div class="footer-contact">
+                        <label>
+                            <span class="input-label">Имя</span>
+                            <input type="text" placeholder="Иван">
+                        </label>
+                        <label>
+                            <span class="input-label">Телефон</span>
+                            <input type="tel" placeholder="+7-999-999-99-99">
+                        </label>
+                    </div>
+                    <label>
+                        <span class="input-label">Сообщение</span>
+                        <textarea placeholder="Ваше сообщение"></textarea>
+                    </label>
+                    
+                    <button class="button footer-button" type="submit">Отправить сообщение</button>
+                </form>
+                
             </div>
         </div>
         <div class="footer-last-row">
@@ -247,8 +264,41 @@
             </div>
         </div>
     </footer>
-    <div>
-        popam
+    <div class="popup">
+        <fieldset class="popup-frame">
+            <h2 class="popup-label">Оставить отзыв</h2>
+            <form action="#">
+                <div class="popup-form">
+                    <label>
+                        <span class="input-label">Имя</span>
+                        <input type="text" placeholder="Иван">
+                    </label>
+                    <label>
+                        <span class="input-label">Фамилия</span>
+                        <input type="text" placeholder="Иванов">
+                    </label>
+                    <label>
+                        <span class="input-label">Email</span>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label>
+                        <span class="input-label">Все понравилось</span>
+                        <div class="radio-wrp">
+                            <input type="radio" name="like" id="like" class="radio-button">
+                            <label for="like" class="input-radio">да</label>
+                            <input type="radio" name="like" id="not-like" checked class="radio-button">
+                            <label for="not-like" class="input-radio">нет</label>
+                        </div>
+                    </label>
+                </div>
+                <label>
+                    <span class="input-label">Отзыв</span>
+                    <textarea placeholder="Отзыв"></textarea>
+                </label>
+                
+                <button class="button popup-button" type="submit">Отправить отзыв</button>
+            </form>
+        </fieldset>
     </div>
 </body>
 </html>

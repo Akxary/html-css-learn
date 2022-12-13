@@ -259,12 +259,25 @@ nav {
     margin-top: 30px;
 }
 
+.about-list-window:nth-of-type(4) {
+    background-color: #005FA3;
+}
+
 .about-list-title {
     font-weight: 900;
     font-size: 55px;
     line-height: 66px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+.about-list-title-x {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .about-list-text {
@@ -277,11 +290,29 @@ nav {
     margin: 30px 0 47px;
 }
 
+.about-list-text-x {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    width: 107px;
+    min-height: 37px;
+    margin: 30px 0 47px;
+    color: #FFF;
+}
+
 .about-list-link {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #005FA3;
+}
+
+.about-list-link-x {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFF;
 }
 
 .customer {
@@ -514,11 +545,69 @@ nav {
     width: 500px;
     display: flex;
     justify-content: space-between;
+    padding: 0 0 15px;
+}
+
+.input-label {
+    display: block;
+    width: 125px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0 0 15px;
+}
+
+input {
+    width: 255px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+}
+
+textarea {
+    width: 100%;
+    min-height: 105px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0 35px;
+}
+
+input::shadow, textarea::shadow {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #BDBDBD;
 }
 
 .footer-button {
+    display: block;
     width: 270px;
-    height: 60px;
+    min-height: 60px;
+    margin: 0 0 0 auto;
 }
 
 .footer-last-row {
@@ -531,4 +620,59 @@ nav {
     color: #000000;
     background: #E5E5E5;
     padding: 50px 0 ;
+}
+
+.popup {
+    width: 40%;
+    background-color: #262626;
+    margin: 0 auto 0 auto;
+    padding: 2% 8%;
+}
+
+.popup-label {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #FFFFFF;
+    margin: 5% 20% 5%;
+}
+
+.popup-button {
+    display: block;
+    width: 37%;
+    min-height: 60px;
+    margin: 0 auto 0 auto;
+}
+
+.popup-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px 0;
+    justify-content: space-around;
+}
+
+.popup input {
+    margin-bottom: 5%;
+}
+
+.input-radio {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color:#FFF;
+    
+}
+
+.radio-button {
+    margin: 0;
+    width: 20%;
+}
+
+.radio-wrp {
+    width: 255px;
+    margin: 0 30px 15px 0;
 }
