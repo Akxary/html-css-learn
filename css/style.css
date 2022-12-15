@@ -323,7 +323,7 @@ nav {
 }
 
 .about-list-window:hover,
-.about-list-window:focus {
+.about-list-window:focus-within {
     background-color: #005FA3;
 }
 
@@ -332,17 +332,17 @@ nav {
 }
 
 .about-list-window:hover .about-list-title,
-.about-list-window:focus .about-list-title {
+.about-list-window:focus-within .about-list-title {
     color: #FFFFFF;
 }
 
 .about-list-window:hover .about-list-text,
-.about-list-window:focus .about-list-text {
+.about-list-window:focus-within .about-list-text {
     color: #FFFFFF;
 }
 
 .about-list-window:hover .about-list-link,
-.about-list-window:focus .about-list-link {
+.about-list-window:focus-within .about-list-link {
     color: #FFFFFF;
 }
 
@@ -476,6 +476,12 @@ nav {
     opacity: 0.4;
 }
 
+.review-slider-button:not(.review-slider-button-active):hover,
+.review-slider-button:not(.review-slider-button-active):focus {
+    background-color: rgb(7, 53, 160);
+    cursor: pointer;
+}
+
 .review-slider-arrow {
     width: 60px;
     height: 60px;
@@ -483,6 +489,10 @@ nav {
     padding: 0;
     border: 0;
     opacity: 0.2;
+}
+
+.review-slider-icon {
+
 }
 
 .review-slider-button-active {
@@ -680,10 +690,46 @@ input::shadow, textarea::shadow {
 }
 
 .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-wrp {
     width: 40%;
     background-color: #262626;
     margin: 0 auto 0 auto;
     padding: 2% 8%;
+    position: relative;
+}
+
+.popup-cross {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 19px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.popup-cross-icon {
+    width: 30px;
+    height: 28px;
+    fill: #FFF;
+}
+
+.popup-cross:hover,
+.popup-cross:focus {
+    cursor:pointer;
+    opacity: 0.7;
 }
 
 .popup-label {
@@ -732,4 +778,8 @@ input::shadow, textarea::shadow {
 .radio-wrp {
     width: 255px;
     margin: 0 30px 15px 0;
+}
+
+.popup-close {
+    display: none;
 }

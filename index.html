@@ -145,7 +145,7 @@
             <h2 class="section-title">Отзывы</h2>
             <div class="review-head-flex">
                 <p class="section-subtitle">Ваши благодарности</p>
-                <button class="button review-button" type="button">Оставить отзыв</button>
+                <button class="button review-button" type="button" id="add-review-btn">Оставить отзыв</button>
             </div>
             <ul>
                 <li class="review-item">
@@ -197,8 +197,8 @@
                     <li><button type="button" class="review-slider-button"></button></li>
                 </ul>
                 <div>
-                    <button type="button" disabled class="review-slider-arrow"><img src="./img/slider__button-prev.svg" alt="prev"></button>
-                    <button type="button" class="review-slider-arrow review-slider-button-active"><img src="./img/slider__button-next.svg" alt="next"></button>
+                    <button type="button" disabled class="review-slider-arrow"><img src="./img/slider__button-prev.svg" class="review-slider-icon" alt="prev"></button>
+                    <button type="button" class="review-slider-arrow review-slider-button-active button"><img src="./img/slider__button-next.svg" class="review-slider-icon" alt="next"></button>
                 </div>
             </div>
         </section>
@@ -282,41 +282,49 @@
             </div>
         </div>
     </footer>
-    <div class="popup">
-        <fieldset class="popup-frame">
-            <h2 class="popup-label">Оставить отзыв</h2>
-            <form action="#">
-                <div class="popup-form">
+    <div class="popup popup-close" id="popup-wrp">
+        <div class="popup-wrp">
+            <button type="button" class="popup-cross" id="popup-close-btn">
+                <svg class="popup-cross-icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.664338 28L15 14.619L29.3357 28L30 27.3814L15.6633 13.9998L30 0.617771L29.3357 0L15 13.3806L0.664338 0L0 0.617771L14.3367 13.9998L0 27.3814L0.664338 28Z" fill="white"/>
+                </svg>
+            </button>
+            <fieldset class="popup-frame">
+                <h2 class="popup-label">Оставить отзыв</h2>
+                <form action="#">
+                    <div class="popup-form">
+                        <label>
+                            <span class="input-label">Имя</span>
+                            <input type="text" placeholder="Иван">
+                        </label>
+                        <label>
+                            <span class="input-label">Фамилия</span>
+                            <input type="text" placeholder="Иванов">
+                        </label>
+                        <label>
+                            <span class="input-label">Email</span>
+                            <input type="email" placeholder="Email">
+                        </label>
+                        <label>
+                            <span class="input-label">Все понравилось</span>
+                            <div class="radio-wrp">
+                                <input type="radio" name="like" id="like" class="radio-button">
+                                <label for="like" class="input-radio">да</label>
+                                <input type="radio" name="like" id="not-like" checked class="radio-button">
+                                <label for="not-like" class="input-radio">нет</label>
+                            </div>
+                        </label>
+                    </div>
                     <label>
-                        <span class="input-label">Имя</span>
-                        <input type="text" placeholder="Иван">
+                        <span class="input-label">Отзыв</span>
+                        <textarea placeholder="Отзыв"></textarea>
                     </label>
-                    <label>
-                        <span class="input-label">Фамилия</span>
-                        <input type="text" placeholder="Иванов">
-                    </label>
-                    <label>
-                        <span class="input-label">Email</span>
-                        <input type="email" placeholder="Email">
-                    </label>
-                    <label>
-                        <span class="input-label">Все понравилось</span>
-                        <div class="radio-wrp">
-                            <input type="radio" name="like" id="like" class="radio-button">
-                            <label for="like" class="input-radio">да</label>
-                            <input type="radio" name="like" id="not-like" checked class="radio-button">
-                            <label for="not-like" class="input-radio">нет</label>
-                        </div>
-                    </label>
-                </div>
-                <label>
-                    <span class="input-label">Отзыв</span>
-                    <textarea placeholder="Отзыв"></textarea>
-                </label>
-                
-                <button class="button popup-button" type="submit">Отправить отзыв</button>
-            </form>
-        </fieldset>
+                    
+                    <button class="button popup-button" type="submit">Отправить отзыв</button>
+                </form>
+            </fieldset>
+        </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
